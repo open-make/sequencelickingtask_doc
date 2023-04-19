@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this hardware, please cite the paper and, if you used it, this repository"
+message: "If you use this hardware, please cite the paper (https://doi.org/10.1038/s41586-022-04478-7) and, if you used it, this document repository"
 authors:
 - family-names: "Duo"
   given-names: "XU"
