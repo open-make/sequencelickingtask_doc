@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sequence licking task hardware</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="./static/style.css" rel="stylesheet">
+        </head>
+<body>
+<header class="site-header">
+    <div class="wrapper">
+        <div class=header-text>
+   
+    <h1 class="site-title">Sequence licking task hardware</h1>
+   
+    <p class="author">by Duo, Xu (design) and Julien Colomb (documentation)</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Sequence licking task hardware
+    </a>
+</li>
+<li class="not-active">
+    <a class="not-active" href="./index_BOM.html">
+        Bill of Materials
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./10_Motorized_lick_port.html">
+        Motorized lick port
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./20_Satellites_system.html">
+        Satellites system
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./30_Force-sensors.html">
+        Force sensors
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="license">License</h1>
+<div class="codehilite"><pre><span></span><code><span class="n">CERN</span> <span class="n">Open</span> <span class="n">Hardware</span> <span class="n">Licence</span> <span class="n">v1</span><span class="mf">.2</span> 
+
+<span class="n">Preamble</span>
+
+<span class="n">Through</span> <span class="n">this</span> <span class="n">CERN</span> <span class="n">Open</span> <span class="n">Hardware</span> <span class="n">Licence</span> (<span class="s">&quot;CERN OHL&quot;</span>) <span class="nb">version</span> <span class="mf">1.2</span>, <span class="n">CERN</span>
+<span class="n">wishes</span> <span class="nb">to</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">tool</span> <span class="nb">to</span> <span class="n">foster</span> <span class="n">collaboration</span> <span class="o">and</span> <span class="n">sharing</span> <span class="n">among</span>
+<span class="nb">hardware</span> <span class="n">designers</span>.  <span class="n">The</span> <span class="n">CERN</span> <span class="n">OHL</span> <span class="k">is</span> <span class="n">copyright</span> <span class="n">CERN</span>. <span class="n">Anyone</span> <span class="k">is</span> <span class="n">welcome</span>
+<span class="nb">to</span> <span class="k">use</span> <span class="n">the</span> <span class="n">CERN</span> <span class="n">OHL</span>, <span class="nb">in</span> <span class="n">unmodified</span> <span class="n">form</span> <span class="n">only</span>, <span class="k">for</span> <span class="n">the</span> <span class="n">distribution</span> <span class="nb">of</span>
+<span class="n">their</span> <span class="n">own</span> <span class="n">Open</span> <span class="n">Hardware</span> <span class="n">designs</span>. <span class="nb">Any</span> <span class="n">other</span> <span class="nb">right</span> <span class="k">is</span> <span class="nb">reserved</span>. <span class="n">Release</span>
+<span class="nb">of</span> <span class="nb">hardware</span> <span class="n">designs</span> <span class="n">under</span> <span class="n">the</span> <span class="n">CERN</span> <span class="n">OHL</span> <span class="k">does</span> <span class="nb">not</span> <span class="n">constitute</span> <span class="n">an</span>
+<span class="n">endorsement</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">licensor</span> <span class="o">or</span> <span class="n">its</span> <span class="n">designs</span> <span class="n">nor</span> <span class="k">does</span> <span class="n">it</span> <span class="n">imply</span> <span class="nb">any</span>
+<span class="n">involvement</span> <span class="n">by</span> <span class="n">CERN</span> <span class="nb">in</span> <span class="n">the</span> <span class="n">development</span> <span class="nb">of</span> <span class="n">such</span> <span class="n">designs</span>.
+
+<span class="mi">1</span>. <span class="n">Definitions</span>
+
+<span class="n">In</span> <span class="n">this</span> <span class="n">Licence</span>, <span class="n">the</span> <span class="n">following</span> <span class="n">terms</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">meanings:</span>
+
+“<span class="n">Licence</span>” <span class="n">means</span> <span class="n">this</span> <span class="n">CERN</span> <span class="n">OHL</span>.
+
+“<span class="n">Documentation</span>” <span class="n">means</span> <span class="n">schematic</span> <span class="n">diagrams</span>, <span class="n">designs</span>, <span class="n">circuit</span> <span class="o">or</span> <span class="n">circuit</span>
+<span class="n">board</span> <span class="n">layouts</span>, <span class="n">mechanical</span> <span class="n">drawings</span>, <span class="n">flow</span> <span class="n">charts</span> <span class="o">and</span> <span class="n">descriptive</span> <span class="n">text</span>,
+<span class="o">and</span> <span class="n">other</span> <span class="n">explanatory</span> <span class="n">material</span> <span class="n">that</span> <span class="k">is</span> <span class="n">explicitly</span> <span class="n">stated</span> <span class="n">as</span> <span class="n">being</span> <span class="k">made</span>
+<span class="n">available</span> <span class="n">under</span> <span class="n">the</span> <span class="n">conditions</span> <span class="nb">of</span> <span class="n">this</span> <span class="n">Licence</span>. <span class="n">The</span> <span class="n">Documentation</span> <span class="n">may</span>
+<span class="n">be</span> <span class="nb">in</span> <span class="nb">any</span> <span class="n">medium</span>, <span class="n">including</span> <span class="k">but</span> <span class="nb">not</span> <span class="n">limited</span> <span class="nb">to</span> <span class="n">computer</span> <span class="n">files</span> <span class="o">and</span>
+<span class="n">representations</span> <span class="n">on</span> <span class="n">paper</span>, <span class="n">film</span>, <span class="o">or</span> <span class="nb">any</span> <span class="n">other</span> <span class="n">media</span>.
+
+“<span class="n">Documentation</span> <span class="n">Location</span>” <span class="n">means</span> <span class="n">a</span> <span class="n">location</span> <span class="n">where</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="k">has</span>
+<span class="n">placed</span> <span class="n">Documentation</span>, <span class="o">and</span> <span class="n">which</span> <span class="n">he</span> <span class="n">believes</span> <span class="n">will</span> <span class="n">be</span> <span class="n">publicly</span>
+<span class="n">accessible</span> <span class="k">for</span> <span class="nb">at</span> <span class="n">least</span> <span class="n">three</span> <span class="n">years</span> <span class="nb">from</span> <span class="n">the</span> <span class="nb">first</span> <span class="n">communication</span> <span class="nb">to</span>
+<span class="n">the</span> <span class="n">public</span> <span class="o">or</span> <span class="n">distribution</span> <span class="nb">of</span> <span class="n">Documentation</span>.
+
+“<span class="n">Product</span>” <span class="n">means</span> <span class="n">either</span> <span class="n">an</span> <span class="n">entire</span>, <span class="o">or</span> <span class="nb">any</span> <span class="n">part</span> <span class="nb">of</span> <span class="n">a</span>, <span class="n">device</span> <span class="n">built</span> <span class="n">using</span>
+<span class="n">the</span> <span class="n">Documentation</span> <span class="o">or</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span>.
+
+“<span class="n">Licensee</span>” <span class="n">means</span> <span class="nb">any</span> <span class="n">natural</span> <span class="o">or</span> <span class="n">legal</span> <span class="n">person</span> <span class="n">exercising</span> <span class="n">rights</span> <span class="n">under</span>
+<span class="n">this</span> <span class="n">Licence</span>.
+
+“<span class="n">Licensor</span>” <span class="n">means</span> <span class="nb">any</span> <span class="n">natural</span> <span class="o">or</span> <span class="n">legal</span> <span class="n">person</span> <span class="n">that</span> <span class="n">creates</span> <span class="o">or</span> <span class="n">modifies</span>
+<span class="n">Documentation</span> <span class="o">and</span> <span class="n">subsequently</span> <span class="n">communicates</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">and</span>/ <span class="o">or</span>
+<span class="n">distributes</span> <span class="n">the</span> <span class="n">resulting</span> <span class="n">Documentation</span> <span class="n">under</span> <span class="n">the</span> <span class="n">terms</span> <span class="o">and</span> <span class="n">conditions</span>
+<span class="nb">of</span> <span class="n">this</span> <span class="n">Licence</span>.
+
+<span class="n">A</span> <span class="n">Licensee</span> <span class="n">may</span> <span class="nb">at</span> <span class="n">the</span> <span class="n">same</span> <span class="n">time</span> <span class="n">be</span> <span class="n">a</span> <span class="n">Licensor</span>, <span class="o">and</span> <span class="n">vice</span> <span class="n">versa</span>. 
+
+<span class="n">Use</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">masculine</span> <span class="n">gender</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">feminine</span> <span class="o">and</span> <span class="n">neuter</span> <span class="n">genders</span>
+<span class="o">and</span> <span class="k">is</span> <span class="n">employed</span> <span class="n">solely</span> <span class="nb">to</span> <span class="n">facilitate</span> <span class="n">reading</span>.
+
+<span class="mi">2</span>. <span class="n">Applicability</span>
+
+<span class="mf">2.1</span>. <span class="n">This</span> <span class="n">Licence</span> <span class="n">governs</span> <span class="n">the</span> <span class="k">use</span>, <span class="n">copying</span>, <span class="n">modification</span>,
+<span class="n">communication</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">and</span> <span class="n">distribution</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span>, <span class="o">and</span>
+<span class="n">the</span> <span class="n">manufacture</span> <span class="o">and</span> <span class="n">distribution</span> <span class="nb">of</span> <span class="n">Products</span>. <span class="n">By</span> <span class="n">exercising</span> <span class="nb">any</span> <span class="nb">right</span>
+<span class="n">granted</span> <span class="n">under</span> <span class="n">this</span> <span class="n">Licence</span>, <span class="n">the</span> <span class="n">Licensee</span> <span class="n">irrevocably</span> <span class="n">accepts</span> <span class="n">these</span>
+<span class="n">terms</span> <span class="o">and</span> <span class="n">conditions</span>.
+
+<span class="mf">2.2</span>. <span class="n">This</span> <span class="n">Licence</span> <span class="k">is</span> <span class="n">granted</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="n">directly</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">Licensee</span>,
+<span class="o">and</span> <span class="n">shall</span> <span class="n">apply</span> <span class="n">worldwide</span> <span class="o">and</span> <span class="k">without</span> <span class="n">limitation</span> <span class="nb">in</span> <span class="n">time</span>. <span class="n">The</span> <span class="n">Licensee</span>
+<span class="n">may</span> <span class="n">assign</span> <span class="n">his</span> <span class="n">licence</span> <span class="n">rights</span> <span class="o">or</span> <span class="n">grant</span> <span class="n">sub-licences</span>.
+
+<span class="mf">2.3</span>. <span class="n">This</span> <span class="n">Licence</span> <span class="k">does</span> <span class="nb">not</span> <span class="n">extend</span> <span class="nb">to</span> <span class="n">software</span>, <span class="n">firmware</span>, <span class="o">or</span> <span class="nb">code</span>
+<span class="n">loaded</span> <span class="n">into</span> <span class="n">programmable</span> <span class="n">devices</span> <span class="n">which</span> <span class="n">may</span> <span class="n">be</span> <span class="n">used</span> <span class="nb">in</span> <span class="n">conjunction</span> <span class="k">with</span>
+<span class="n">the</span> <span class="n">Documentation</span>, <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="o">or</span> <span class="k">with</span> <span class="n">Products</span>, <span class="k">unless</span>
+<span class="n">such</span> <span class="n">software</span>, <span class="n">firmware</span>, <span class="o">or</span> <span class="nb">code</span> <span class="k">is</span> <span class="n">explicitly</span> <span class="n">expressed</span> <span class="nb">to</span> <span class="n">be</span> <span class="n">subject</span>
+<span class="nb">to</span> <span class="n">this</span> <span class="n">Licence</span>. <span class="n">The</span> <span class="k">use</span> <span class="nb">of</span> <span class="n">such</span> <span class="n">software</span>, <span class="n">firmware</span>, <span class="o">or</span> <span class="nb">code</span> <span class="k">is</span>
+<span class="n">otherwise</span> <span class="n">subject</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">applicable</span> <span class="n">licence</span> <span class="n">terms</span> <span class="o">and</span> <span class="n">conditions</span>.
+
+<span class="mi">3</span>. <span class="n">Copying</span>, <span class="n">modification</span>, <span class="n">communication</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">and</span> <span class="n">distribution</span>
+<span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span>
+
+<span class="mf">3.1</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">shall</span> <span class="nb">keep</span> <span class="n">intact</span> <span class="nb">all</span> <span class="n">copyright</span> <span class="o">and</span> <span class="n">trademarks</span>
+<span class="n">notices</span>, <span class="nb">all</span> <span class="n">notices</span> <span class="n">referring</span> <span class="nb">to</span> <span class="n">Documentation</span> <span class="n">Location</span>, <span class="o">and</span> <span class="nb">all</span>
+<span class="n">notices</span> <span class="n">that</span> <span class="n">refer</span> <span class="nb">to</span> <span class="n">this</span> <span class="n">Licence</span> <span class="o">and</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">disclaimer</span> <span class="nb">of</span> <span class="n">warranties</span>
+<span class="n">that</span> <span class="n">are</span> <span class="n">included</span> <span class="nb">in</span> <span class="n">the</span> <span class="n">Documentation</span>. <span class="n">He</span> <span class="n">shall</span> <span class="n">include</span> <span class="n">a</span> <span class="nb">copy</span>
+<span class="n">thereof</span> <span class="nb">in</span> <span class="n">every</span> <span class="nb">copy</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span> <span class="o">or</span>, <span class="n">as</span> <span class="n">the</span> <span class="n">case</span> <span class="n">may</span> <span class="n">be</span>,
+<span class="nb">modified</span> <span class="n">Documentation</span>, <span class="n">that</span> <span class="n">he</span> <span class="n">communicates</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">or</span>
+<span class="n">distributes</span>.
+
+<span class="mf">3.2</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">may</span> <span class="nb">copy</span>, <span class="n">communicate</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">and</span> <span class="n">distribute</span>
+<span class="n">verbatim</span> <span class="n">copies</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span>, <span class="nb">in</span> <span class="nb">any</span> <span class="n">medium</span>, <span class="n">subject</span> <span class="nb">to</span> <span class="n">the</span>
+<span class="n">requirements</span> <span class="n">specified</span> <span class="nb">in</span> <span class="n">section</span> <span class="mf">3.1</span>.
+
+<span class="mf">3.3</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">may</span> <span class="n">modify</span> <span class="n">the</span> <span class="n">Documentation</span> <span class="o">or</span> <span class="nb">any</span> <span class="n">portion</span> <span class="n">thereof</span>
+<span class="n">provided</span> <span class="n">that</span> <span class="n">upon</span> <span class="n">modification</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span>, <span class="n">the</span> <span class="n">Licensee</span>
+<span class="n">shall</span> <span class="k">make</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="n">available</span> <span class="nb">from</span> <span class="n">a</span> <span class="n">Documentation</span>
+<span class="n">Location</span> <span class="n">such</span> <span class="n">that</span> <span class="n">it</span> <span class="nb">can</span> <span class="n">be</span> <span class="n">easily</span> <span class="n">located</span> <span class="n">by</span> <span class="n">an</span> <span class="n">original</span> <span class="n">Licensor</span>
+<span class="n">once</span> <span class="n">the</span> <span class="n">Licensee</span> <span class="n">communicates</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">or</span> <span class="n">distributes</span> <span class="n">the</span>
+<span class="nb">modified</span> <span class="n">Documentation</span> <span class="n">under</span> <span class="n">section</span> <span class="mf">3.4</span>, <span class="o">and</span>, <span class="n">where</span> <span class="k">required</span> <span class="n">by</span>
+<span class="n">section</span> <span class="mf">4.1</span>, <span class="n">by</span> <span class="n">a</span> <span class="n">recipient</span> <span class="nb">of</span> <span class="n">a</span> <span class="n">Product</span>. <span class="n">However</span>, <span class="n">the</span> <span class="n">Licensor</span> <span class="n">shall</span>
+<span class="nb">not</span> <span class="n">assert</span> <span class="n">his</span> <span class="n">rights</span> <span class="n">under</span> <span class="n">the</span> <span class="n">foregoing</span> <span class="n">proviso</span> <span class="k">unless</span> <span class="o">or</span> <span class="k">until</span> <span class="n">a</span>
+<span class="n">Product</span> <span class="k">is</span> <span class="n">distributed</span>.
+
+<span class="mf">3.4</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">may</span> <span class="n">communicate</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">public</span> <span class="o">and</span> <span class="n">distribute</span> <span class="n">the</span>
+<span class="nb">modified</span> <span class="n">Documentation</span> (<span class="n">thereby</span> <span class="nb">in</span> <span class="n">addition</span> <span class="nb">to</span> <span class="n">being</span> <span class="n">a</span> <span class="n">Licensee</span> <span class="o">also</span>
+<span class="n">becoming</span> <span class="n">a</span> <span class="n">Licensor</span>), <span class="n">always</span> <span class="n">provided</span> <span class="n">that</span> <span class="n">he</span> <span class="n">shall:</span>
+
+<span class="n">a</span>) <span class="n">comply</span> <span class="k">with</span> <span class="n">section</span> <span class="mf">3.1</span>;
+
+<span class="n">b</span>) <span class="nb">cause</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="nb">to</span> <span class="n">carry</span> <span class="n">prominent</span> <span class="n">notices</span> <span class="n">stating</span>
+<span class="n">that</span> <span class="n">the</span> <span class="n">Licensee</span> <span class="k">has</span> <span class="nb">modified</span> <span class="n">the</span> <span class="n">Documentation</span>, <span class="k">with</span> <span class="n">the</span> <span class="n">date</span> <span class="o">and</span>
+<span class="n">description</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">modifications</span>;
+
+<span class="n">c</span>) <span class="nb">cause</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="nb">to</span> <span class="n">carry</span> <span class="n">a</span> <span class="nb">new</span> <span class="n">Documentation</span>
+<span class="n">Location</span> <span class="n">notice</span> <span class="k">if</span> <span class="n">the</span> <span class="n">original</span> <span class="n">Documentation</span> <span class="n">provided</span> <span class="k">for</span> <span class="nb">one</span>;
+
+<span class="nb">d</span>) <span class="k">make</span> <span class="n">available</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="nb">at</span> <span class="n">the</span> <span class="n">same</span> <span class="nb">level</span> <span class="nb">of</span>
+<span class="n">abstraction</span> <span class="n">as</span> <span class="n">that</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span>, <span class="nb">in</span> <span class="n">the</span> <span class="n">preferred</span> <span class="nb">format</span> <span class="k">for</span>
+<span class="n">making</span> <span class="n">modifications</span> <span class="nb">to</span> <span class="n">it</span> (<span class="nb">e</span>.<span class="n">g</span>. <span class="n">the</span> <span class="k">native</span> <span class="nb">format</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">CAD</span> <span class="n">tool</span> <span class="n">as</span>
+<span class="n">applicable</span>), <span class="o">and</span> <span class="nb">in</span> <span class="n">the</span> <span class="n">event</span> <span class="n">that</span> <span class="nb">format</span> <span class="k">is</span> <span class="n">proprietary</span>, <span class="nb">in</span> <span class="n">a</span> <span class="nb">format</span>
+<span class="n">viewable</span> <span class="k">with</span> <span class="n">a</span> <span class="n">tool</span> <span class="n">licensed</span> <span class="n">under</span> <span class="n">an</span> <span class="n">OSI-approved</span> <span class="n">license</span> <span class="k">if</span> <span class="n">the</span>
+<span class="n">proprietary</span> <span class="n">tool</span> <span class="nb">can</span> <span class="n">create</span> <span class="n">it</span>; <span class="o">and</span>
+
+<span class="nb">e</span>) <span class="n">license</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="n">under</span> <span class="n">the</span> <span class="n">terms</span> <span class="o">and</span> <span class="n">conditions</span>
+<span class="nb">of</span> <span class="n">this</span> <span class="n">Licence</span> <span class="o">or</span>, <span class="n">where</span> <span class="n">applicable</span>, <span class="n">a</span> <span class="nb">later</span> <span class="nb">version</span> <span class="nb">of</span> <span class="n">this</span> <span class="n">Licence</span>
+<span class="n">as</span> <span class="n">may</span> <span class="n">be</span> <span class="n">issued</span> <span class="n">by</span> <span class="n">CERN</span>.
+
+<span class="mf">3.5</span>. <span class="n">The</span> <span class="n">Licence</span> <span class="n">includes</span> <span class="n">a</span> <span class="n">non-exclusive</span> <span class="n">licence</span> <span class="nb">to</span> <span class="n">those</span> <span class="n">patents</span> <span class="o">or</span>
+<span class="n">registered</span> <span class="n">designs</span> <span class="n">that</span> <span class="n">are</span> <span class="n">held</span> <span class="n">by</span>, <span class="n">under</span> <span class="n">the</span> <span class="n">control</span> <span class="nb">of</span>, <span class="o">or</span>
+<span class="n">sub-licensable</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span>, <span class="nb">to</span> <span class="n">the</span> <span class="n">extent</span> <span class="n">necessary</span> <span class="nb">to</span> <span class="k">make</span> <span class="k">use</span> <span class="nb">of</span>
+<span class="n">the</span> <span class="n">rights</span> <span class="n">granted</span> <span class="n">under</span> <span class="n">this</span> <span class="n">Licence</span>. <span class="n">The</span> <span class="nb">scope</span> <span class="nb">of</span> <span class="n">this</span> <span class="n">section</span> <span class="mf">3.5</span>
+<span class="n">shall</span> <span class="n">be</span> <span class="n">strictly</span> <span class="n">limited</span> <span class="nb">to</span> <span class="n">the</span> <span class="nb">parts</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span> <span class="o">or</span>
+<span class="nb">modified</span> <span class="n">Documentation</span> <span class="n">created</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span>.
+
+<span class="mi">4</span>. <span class="n">Manufacture</span> <span class="o">and</span> <span class="n">distribution</span> <span class="nb">of</span> <span class="n">Products</span>
+
+<span class="mf">4.1</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">may</span> <span class="n">manufacture</span> <span class="o">or</span> <span class="n">distribute</span> <span class="n">Products</span> <span class="n">always</span>
+<span class="n">provided</span> <span class="n">that</span>, <span class="n">where</span> <span class="n">such</span> <span class="n">manufacture</span> <span class="o">or</span> <span class="n">distribution</span> <span class="n">requires</span> <span class="n">a</span>
+<span class="n">licence</span> <span class="n">under</span> <span class="n">this</span> <span class="n">Licence</span> <span class="n">the</span> <span class="n">Licensee</span> <span class="n">provides</span> <span class="nb">to</span> <span class="n">each</span> <span class="n">recipient</span> <span class="nb">of</span>
+<span class="n">such</span> <span class="n">Products</span> <span class="n">an</span> <span class="n">easy</span> <span class="n">means</span> <span class="nb">of</span> <span class="n">accessing</span> <span class="n">a</span> <span class="nb">copy</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">Documentation</span>
+<span class="o">or</span> <span class="nb">modified</span> <span class="n">Documentation</span>, <span class="n">as</span> <span class="n">applicable</span>, <span class="n">as</span> <span class="n">set</span> <span class="n">out</span> <span class="nb">in</span> <span class="n">section</span> <span class="mi">3</span>.
+
+<span class="mf">4.2</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="k">is</span> <span class="n">invited</span> <span class="nb">to</span> <span class="n">inform</span> <span class="nb">any</span> <span class="n">Licensor</span> <span class="n">who</span> <span class="k">has</span> <span class="n">indicated</span>
+<span class="n">his</span> <span class="n">wish</span> <span class="nb">to</span> <span class="nb">receive</span> <span class="n">this</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="nb">type</span>, <span class="n">quantity</span> <span class="o">and</span>
+<span class="n">dates</span> <span class="nb">of</span> <span class="n">production</span> <span class="nb">of</span> <span class="n">Products</span> <span class="n">the</span> <span class="n">Licensee</span> <span class="k">has</span> (<span class="n">had</span>) <span class="n">manufactured</span>
+
+<span class="mi">5</span>. <span class="n">Warranty</span> <span class="o">and</span> <span class="n">liability</span>
+
+<span class="mf">5.1</span>. <span class="n">DISCLAIMER</span> – <span class="n">The</span> <span class="n">Documentation</span> <span class="o">and</span> <span class="nb">any</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="n">are</span>
+<span class="n">provided</span> <span class="s">&quot;as is&quot;</span> <span class="o">and</span> <span class="nb">any</span> <span class="n">express</span> <span class="o">or</span> <span class="n">implied</span> <span class="n">warranties</span>, <span class="n">including</span>, <span class="k">but</span>
+<span class="nb">not</span> <span class="n">limited</span> <span class="nb">to</span>, <span class="n">implied</span> <span class="n">warranties</span> <span class="nb">of</span> <span class="n">merchantability</span>, <span class="nb">of</span> <span class="n">satisfactory</span>
+<span class="n">quality</span>, <span class="n">non-infringement</span> <span class="nb">of</span> <span class="n">third</span> <span class="n">party</span> <span class="n">rights</span>, <span class="o">and</span> <span class="n">fitness</span> <span class="k">for</span> <span class="n">a</span>
+<span class="n">particular</span> <span class="n">purpose</span> <span class="o">or</span> <span class="k">use</span> <span class="n">are</span> <span class="n">disclaimed</span> <span class="nb">in</span> <span class="n">respect</span> <span class="nb">of</span> <span class="n">the</span>
+<span class="n">Documentation</span>, <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="o">or</span> <span class="nb">any</span> <span class="n">Product</span>. <span class="n">The</span> <span class="n">Licensor</span>
+<span class="n">makes</span> <span class="n">no</span> <span class="n">representation</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Documentation</span>, <span class="nb">modified</span>
+<span class="n">Documentation</span>, <span class="o">or</span> <span class="nb">any</span> <span class="n">Product</span>, <span class="k">does</span> <span class="o">or</span> <span class="n">will</span> <span class="nb">not</span> <span class="n">infringe</span> <span class="nb">any</span> <span class="n">patent</span>,
+<span class="n">copyright</span>, <span class="n">trade</span> <span class="n">secret</span> <span class="o">or</span> <span class="n">other</span> <span class="n">proprietary</span> <span class="nb">right</span>. <span class="n">The</span> <span class="n">entire</span> <span class="n">risk</span> <span class="n">as</span>
+<span class="nb">to</span> <span class="n">the</span> <span class="k">use</span>, <span class="n">quality</span>, <span class="o">and</span> <span class="n">performance</span> <span class="nb">of</span> <span class="n">a</span> <span class="n">Product</span> <span class="n">shall</span> <span class="n">be</span> <span class="k">with</span> <span class="n">the</span>
+<span class="n">Licensee</span> <span class="o">and</span> <span class="nb">not</span> <span class="n">the</span> <span class="n">Licensor</span>. <span class="n">This</span> <span class="n">disclaimer</span> <span class="nb">of</span> <span class="n">warranty</span> <span class="k">is</span> <span class="n">an</span>
+<span class="n">essential</span> <span class="n">part</span> <span class="nb">of</span> <span class="n">this</span> <span class="n">Licence</span> <span class="o">and</span> <span class="n">a</span> <span class="nb">condition</span> <span class="k">for</span> <span class="n">the</span> <span class="n">grant</span> <span class="nb">of</span> <span class="nb">any</span>
+<span class="n">rights</span> <span class="n">granted</span> <span class="n">under</span> <span class="n">this</span> <span class="n">Licence</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">warrants</span> <span class="n">that</span> <span class="n">it</span> <span class="k">does</span>
+<span class="nb">not</span> <span class="nb">act</span> <span class="nb">in</span> <span class="n">a</span> <span class="n">consumer</span> <span class="n">capacity</span>.
+
+<span class="mf">5.2</span>. <span class="n">LIMITATION</span> <span class="n">OF</span> <span class="n">LIABILITY</span> – <span class="n">The</span> <span class="n">Licensor</span> <span class="n">shall</span> <span class="n">have</span> <span class="n">no</span> <span class="n">liability</span>
+<span class="k">for</span> <span class="n">direct</span>, <span class="n">indirect</span>, <span class="n">special</span>, <span class="n">incidental</span>, <span class="n">consequential</span>, <span class="n">exemplary</span>,
+<span class="n">punitive</span> <span class="o">or</span> <span class="n">other</span> <span class="n">damages</span> <span class="nb">of</span> <span class="nb">any</span> <span class="n">character</span> <span class="n">including</span>, <span class="k">without</span>
+<span class="n">limitation</span>, <span class="n">procurement</span> <span class="nb">of</span> <span class="n">substitute</span> <span class="n">goods</span> <span class="o">or</span> <span class="n">services</span>, <span class="n">loss</span> <span class="nb">of</span> <span class="k">use</span>,
+<span class="n">data</span> <span class="o">or</span> <span class="n">profits</span>, <span class="o">or</span> <span class="n">business</span> <span class="n">interruption</span>, <span class="n">however</span> <span class="n">caused</span> <span class="o">and</span> <span class="n">on</span> <span class="nb">any</span>
+<span class="n">theory</span> <span class="nb">of</span> <span class="n">contract</span>, <span class="n">warranty</span>, <span class="n">tort</span> (<span class="n">including</span> <span class="n">negligence</span>), <span class="n">product</span>
+<span class="n">liability</span> <span class="o">or</span> <span class="n">otherwise</span>, <span class="n">arising</span> <span class="nb">in</span> <span class="nb">any</span> <span class="n">way</span> <span class="nb">in</span> <span class="n">relation</span> <span class="nb">to</span> <span class="n">the</span>
+<span class="n">Documentation</span>, <span class="nb">modified</span> <span class="n">Documentation</span> <span class="o">and/or</span> <span class="n">the</span> <span class="k">use</span>, <span class="n">manufacture</span> <span class="o">or</span>
+<span class="n">distribution</span> <span class="nb">of</span> <span class="n">a</span> <span class="n">Product</span>, <span class="n">even</span> <span class="k">if</span> <span class="n">advised</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">possibility</span> <span class="nb">of</span> <span class="n">such</span>
+<span class="n">damages</span>, <span class="o">and</span> <span class="n">the</span> <span class="n">Licensee</span> <span class="n">shall</span> <span class="n">hold</span> <span class="n">the</span> <span class="n">Licensor</span>(<span class="nb">s</span>) <span class="n">free</span> <span class="o">and</span> <span class="n">harmless</span>
+<span class="nb">from</span> <span class="nb">any</span> <span class="n">liability</span>, <span class="n">costs</span>, <span class="n">damages</span>, <span class="n">fees</span> <span class="o">and</span> <span class="n">expenses</span>, <span class="n">including</span>
+<span class="n">claims</span> <span class="n">by</span> <span class="n">third</span> <span class="n">parties</span>, <span class="nb">in</span> <span class="n">relation</span> <span class="nb">to</span> <span class="n">such</span> <span class="k">use</span>.
+
+<span class="mi">6</span>. <span class="n">General</span>
+
+<span class="mf">6.1</span>. <span class="n">Except</span> <span class="k">for</span> <span class="n">the</span> <span class="n">rights</span> <span class="n">explicitly</span> <span class="n">granted</span> <span class="n">hereunder</span>, <span class="n">this</span> <span class="n">Licence</span>
+<span class="k">does</span> <span class="nb">not</span> <span class="n">imply</span> <span class="o">or</span> <span class="n">represent</span> <span class="nb">any</span> <span class="n">transfer</span> <span class="o">or</span> <span class="n">assignment</span> <span class="nb">of</span> <span class="n">intellectual</span>
+<span class="n">property</span> <span class="n">rights</span> <span class="nb">to</span> <span class="n">the</span> <span class="n">Licensee</span>.
+
+<span class="mf">6.2</span>. <span class="n">The</span> <span class="n">Licensee</span> <span class="n">shall</span> <span class="nb">not</span> <span class="k">use</span> <span class="o">or</span> <span class="k">make</span> <span class="n">reference</span> <span class="nb">to</span> <span class="nb">any</span> <span class="nb">of</span> <span class="n">the</span> <span class="n">names</span>
+(<span class="n">including</span> <span class="n">acronyms</span> <span class="o">and</span> <span class="n">abbreviations</span>), <span class="n">images</span>, <span class="o">or</span> <span class="n">logos</span> <span class="n">under</span> <span class="n">which</span>
+<span class="n">the</span> <span class="n">Licensor</span> <span class="k">is</span> <span class="n">known</span>, <span class="n">save</span> <span class="nb">in</span> <span class="nb">so</span> <span class="n">far</span> <span class="n">as</span> <span class="k">required</span> <span class="nb">to</span> <span class="n">comply</span> <span class="k">with</span>
+<span class="n">section</span> <span class="mi">3</span>. <span class="nb">Any</span> <span class="n">such</span> <span class="n">permitted</span> <span class="k">use</span> <span class="o">or</span> <span class="n">reference</span> <span class="n">shall</span> <span class="n">be</span> <span class="n">factual</span> <span class="o">and</span>
+<span class="n">shall</span> <span class="nb">in</span> <span class="n">no</span> <span class="n">event</span> <span class="n">suggest</span> <span class="nb">any</span> <span class="n">kind</span> <span class="nb">of</span> <span class="n">endorsement</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="o">or</span>
+<span class="n">its</span> <span class="n">personnel</span> <span class="nb">of</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="o">or</span> <span class="nb">any</span> <span class="n">Product</span>, <span class="o">or</span> <span class="nb">any</span>
+<span class="n">kind</span> <span class="nb">of</span> <span class="n">implication</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="o">or</span> <span class="n">its</span> <span class="n">personnel</span> <span class="nb">in</span> <span class="n">the</span>
+<span class="n">preparation</span> <span class="nb">of</span> <span class="n">the</span> <span class="nb">modified</span> <span class="n">Documentation</span> <span class="o">or</span> <span class="n">Product</span>.
+
+<span class="mf">6.3</span>. <span class="n">CERN</span> <span class="n">may</span> <span class="n">publish</span> <span class="n">updated</span> <span class="n">versions</span> <span class="nb">of</span> <span class="n">this</span> <span class="n">Licence</span> <span class="n">which</span> <span class="n">retain</span>
+<span class="n">the</span> <span class="n">same</span> <span class="n">general</span> <span class="n">provisions</span> <span class="n">as</span> <span class="n">this</span> <span class="nb">version</span>, <span class="k">but</span> <span class="n">differ</span> <span class="nb">in</span> <span class="n">detail</span> <span class="nb">so</span>
+<span class="n">far</span> <span class="n">this</span> <span class="k">is</span> <span class="k">required</span> <span class="o">and</span> <span class="n">reasonable</span>. <span class="n">New</span> <span class="n">versions</span> <span class="n">will</span> <span class="n">be</span> <span class="n">published</span>
+<span class="k">with</span> <span class="n">a</span> <span class="nb">unique</span> <span class="nb">version</span> <span class="n">number</span>.
+
+<span class="mf">6.4</span>. <span class="n">This</span> <span class="n">Licence</span> <span class="n">shall</span> <span class="n">terminate</span> <span class="k">with</span> <span class="n">immediate</span> <span class="n">effect</span>, <span class="n">upon</span> <span class="n">written</span>
+<span class="n">notice</span> <span class="o">and</span> <span class="k">without</span> <span class="n">involvement</span> <span class="nb">of</span> <span class="n">a</span> <span class="n">court</span> <span class="k">if</span> <span class="n">the</span> <span class="n">Licensee</span> <span class="n">fails</span> <span class="nb">to</span>
+<span class="n">comply</span> <span class="k">with</span> <span class="nb">any</span> <span class="nb">of</span> <span class="n">its</span> <span class="n">terms</span> <span class="o">and</span> <span class="n">conditions</span>, <span class="o">or</span> <span class="k">if</span> <span class="n">the</span> <span class="n">Licensee</span>
+<span class="n">initiates</span> <span class="n">legal</span> <span class="nb">action</span> <span class="n">against</span> <span class="n">Licensor</span> <span class="nb">in</span> <span class="n">relation</span> <span class="nb">to</span> <span class="n">this</span>
+<span class="n">Licence</span>. <span class="n">Section</span> <span class="mi">5</span> <span class="n">shall</span> <span class="n">continue</span> <span class="nb">to</span> <span class="n">apply</span>.
+</code></pre></div>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2023 Duo, Xu (design) and Julien Colomb (documentation)</p>
+    <p class="license">Sequence licking task hardware is released under <a href="license.html">CERN-OHL-1.2</a>.</p>
+
+    </div>
+</footer></body>
+</html>
