@@ -1,12 +1,13 @@
 # Recommended information
 Authors:
-    - My Name
+    - Duo, Xu (design)
+    - Julien Colomb (documentation)
 
-Affiliation: My Affiliation
 
-#License: CERN-OHL-1.2
 
-Email: my-email@my.domain
+License: CERN-OHL-1.2
+
+
 
 
 #Uncomment below to add custom categories
@@ -22,7 +23,7 @@ Email: my-email@my.domain
 #PageBOMTitle: '##For this step you will need'
 
 #Uncomment below to override the project title
-#Title: 'My project'
+Title: 'Sequence licking task hardware'
 
 #Uncomment below to set a custom Website root for static HTML builds
 #WebsiteRoot: '/path/'
