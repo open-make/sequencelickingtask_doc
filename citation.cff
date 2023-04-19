@@ -11,9 +11,6 @@ version: 0.1.0
 date-released: 2023-04-19
 url: "https://github.com/open-make/sequencelickingtask_doc"
 preferred-citation:
-  authors:
-    - family-names: Famnames
-      given-names: "Given Nam E."
   title: "Cortical processing of flexible and context-dependent sensorimotor sequences"
   type: article
   year: 2022
