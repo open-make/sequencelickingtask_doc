@@ -13,6 +13,9 @@ date-released: 2023-04-19
 url: "https://github.com/open-make/sequencelickingtask_doc"
 
 preferred-citation:
+  authors:
+     - family-names: "addinglater"
+       given-names: "see doi of article"
   title: "Cortical processing of flexible and context-dependent sensorimotor sequences"
   type: article
   doi:https://doi.org/10.1038/s41586-022-04478-7
