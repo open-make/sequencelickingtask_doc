@@ -3,7 +3,6 @@ message: "If you use this hardware, please cite the paper and, if you used it, t
 authors:
 - family-names: "Duo"
   given-names: "XU"
-  orcid: "??"
 - family-names: "Colomb"
   given-names: "Julien"
   orcid: "https://orcid.org/0000-0002-3127-5520"
