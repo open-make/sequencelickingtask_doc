@@ -10,10 +10,4 @@ title: "hardware for sequence licking task"
 version: 0.1.0
 date-released: 2023-04-19
 url: "https://github.com/open-make/sequencelickingtask_doc"
-preferred-citation:
-  authors:
-    - family-names: "several"
-      given-names: "see doi"
-  title: "Cortical processing of flexible and context-dependent sensorimotor sequences"
-  type: article
-  doi:https://doi.org/10.1038/s41586-022-04478-7
+
